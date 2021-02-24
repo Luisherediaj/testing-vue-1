@@ -16,7 +16,7 @@ describe('TestComponent.vue', () => {
   it('should be pass when you render slots', () => {
     const title = '<span>Title</span>'
     const wrapper = shallowMount(TestComponent, {
-      slots: {title: title}
+      slots: { title: title }
     })
     expect(wrapper.html()).toMatch(title)
   })
